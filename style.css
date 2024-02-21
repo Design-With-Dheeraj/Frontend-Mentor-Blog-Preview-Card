@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body{
+    max-width: 1440px;
+    height: 960px;
+    background-color: var(--theme-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+@font-face {
+    font-family: "figtree-extra-bold";
+    src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "figtree-semi-bold";
+    src: url(assets/fonts/static/Figtree-SemiBold.ttf);
+}
+
+
+:root{
+    --theme-color: #f5d04e;
+}
+
+.card-contain{
+    width: 380px;
+    height: 522px;
+
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #000;
+
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 10px 10px 1px #000;
+
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card-contain:hover{
+    box-shadow: 14px 14px 1px #000;
+}
+
+.card-contain .img-bx{
+    width: 100%;
+}
+
+.img-bx img{
+    width: 100%;
+    height: auto;
+}
+
+.highlight-span{
+    width: 80px;
+    height: 30px;
+    
+    background-color: var(--theme-color);
+    border-radius: 4px;
+
+    margin: 20px 0 10px;
+    
+    font: 14px "figtree-extra-bold";
+    text-align: center;
+
+    line-height: 30px;
+}
+
+.blog-publish-date{
+    font: 12px "figtree-semi-bold";
+}
+
+.blog-title{
+    font: 24px "figtree-extra-bold";
+    margin: 20px 0;
+    transition: 0.4s;
+}
+
+.card-contain:hover .blog-title{
+    color: var(--theme-color);
+}
+
+.blog-info{
+    font: 16px "figtree-semi-bold";
+    color: #b2b2b2;
+}
+
+.blogger-profile{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.blogger-profile img{
+    width: 50px;
+    height: auto;
+}
+
+.blogger-profile .profile-name{
+    margin-left: 10px;
+    font: 12px "figtree-extra-bold";
+}
+
+.img-bx img{
+    border-radius: 12px;
+}
+
+.attribution 
+{ 
+    width: 460px;
+
+    background-color: #000;
+
+    font: 14px "figtree-extra-bold";
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize; 
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 12px 0;
+    border-radius: 6px;
+}
+
+.attribution a 
+{ 
+    color: var(--theme-color); 
+}
+
+
+
+
+/* --------- Responsive Design ---------- */
+
+@media screen and (max-width:480px) {
+    .card-contain{
+        width: 280px;
+        height: auto;
+
+        padding: 10px;
+    }
+
+    .blog-title{
+        font: 18px "figtree-extra-bold";
+        margin: 14px 0;
+    }
+
+    .blog-info{
+        font: 14px "figtree-semi-bold";
+        color: #b2b2b2;
+    }
+
+    .blogger-profile img{
+        width: 40px;
+        height: auto;
+    }
+
+    .attribution 
+    { 
+        width: 300px;
+    }
+}
+
